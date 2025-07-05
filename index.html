@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Showroom - Ultimate Driving Machine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="image/logo.png" alt="BMW Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="models.html" class="nav-link">Models</a></li>
+                <li><a href="booking.html" class="nav-link">Book a Test Drive</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Ultimate Driving Machine</h1>
+            <p>Experience luxury, performance, and innovation with BMW</p>
+            <button class="cta-btn">Explore Models</button>
+        </div>
+        <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="video/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="featured-models">
+        <div class="container">
+            <h2>Featured Models</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="car-card active">
+                        <img src="image/x7-lci-offer.png" alt="BMW X7">
+                        <h3>THE BMW X7</h3>
+                        <p>Starting from ₹ 1,31,40,000</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                    <div class="car-card">
+                        <img src="image/XM.webp" alt="BMW XM">
+                        <h3>THE BMW XM</h3>
+                        <p>Starting from ₹ 2,60,00,000</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                    <div class="car-card">
+                        <img src="image/i5 M60.png" alt="BMW i5">
+                        <h3>New BMW i5 M60 xDRIVE</h3>
+                        <p>Starting from ₹ 1,19,50,000</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                    <div class="car-card">
+                        <img src="image/7.webp" alt="BMW i5">
+                        <h3>THE BMW 7 SERIES SEDAN</h3>
+                        <p>Starting from ₹ 1,84,20,000</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)">❮</button>
+                <button class="carousel-btn next" onclick="moveCarousel(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Innovation</h3>
+                    <p>Cutting-edge technology in every BMW</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Performance</h3>
+                    <p>Engineered for the ultimate driving experience</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Luxury</h3>
+                    <p>Premium materials and craftsmanship</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="image/logo.png" alt="BMW Logo" class="footer-logo">
+                    <p>The Ultimate Driving Machine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="models.html">Models</a></li>
+                        <li><a href="booking.html">Book Test Drive</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 BMW Boulevard, NY 10001</p>
+                    <p>📞 +1 (555) 123-BMW1</p>
+                    <p>✉️ info@bmwshowroom.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#">📘 Facebook</a>
+                        <a href="#">📷 Instagram</a>
+                        <a href="#">🐦 Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BMW Showroom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

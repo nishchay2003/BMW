@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Test Drive - BMW Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="image/logo.png" alt="BMW Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="models.html" class="nav-link">Models</a></li>
+                <li><a href="booking.html" class="nav-link active">Book a Test Drive</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="booking-hero">
+        <div class="container">
+            <h1>Book Your Test Drive</h1>
+            <p>Experience the Ultimate Driving Machine</p>
+        </div>
+    </section>
+
+    <section class="booking-form-section">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-info">
+                    <h2>Why Test Drive?</h2>
+                    <ul>
+                        <li>✓ Experience BMW's legendary performance</li>
+                        <li>✓ Feel the luxury and comfort</li>
+                        <li>✓ Test advanced technology features</li>
+                        <li>✓ No obligation to purchase</li>
+                    </ul>
+                    <div class="booking-image">
+                        <img src="image/bmw.jpeg" alt="BMW Test Drive">
+                    </div>
+                </div>
+                
+                <div class="booking-form">
+                    <form id="testDriveForm" onsubmit="event.preventDefault(); validateForm('testDriveForm');">
+                        <h3>Book Your Appointment</h3>
+                        
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="model">Select Model *</label>
+                            <select id="model" name="model" required>
+                                <option value="">Choose a BMW Model</option>
+                                <option value="x1">BMW X1</option>
+                                <option value="x5">BMW X5</option>
+                                <option value="7series">BMW 7 Series</option>
+                                <option value="i8">BMW i8</option>
+                                <option value="m3">BMW M3</option>
+                                <option value="z4">BMW Z4</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="time">Preferred Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select Time</option>
+                                    <option value="09:00">9:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="16:00">4:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Any specific requirements or questions?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Book Test Drive</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="image/logo.png" alt="BMW Logo" class="footer-logo">
+                    <p>The Ultimate Driving Machine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="models.html">Models</a></li>
+                        <li><a href="booking.html">Book Test Drive</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 BMW Boulevard, NY 10001</p>
+                    <p>📞 +1 (555) 123-BMW1</p>
+                    <p>✉️ info@bmwshowroom.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#">📘 Facebook</a>
+                        <a href="#">📷 Instagram</a>
+                        <a href="#">🐦 Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BMW Showroom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Set minimum date to today
+        document.getElementById('date').min = new Date().toISOString().split('T')[0];
+    </script>
+</body>
+</html>

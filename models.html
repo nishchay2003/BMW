@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Models - Ultimate Driving Machine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="image/logo.png" alt="BMW Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="models.html" class="nav-link active">Models</a></li>
+                <li><a href="booking.html" class="nav-link">Book a Test Drive</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="models-hero">
+        <div class="container">
+            <h1>BMW Models</h1>
+            <p>Discover Your Perfect BMW</p>
+        </div>
+    </section>
+
+    <section class="models-grid">
+        <div class="container">
+            <div class="models-container">
+                <div class="model-card" onclick="openModal('x1-modal')">
+                    <img src="image/iX1 eDrive20L M Sport.png" alt="New THE BMW iX1 LONG WHEELBASE">
+                    <div class="model-info">
+                        <h3>New THE BMW iX1 LONG WHEELBASE<br><h6>Full-Electric</h6></h3>
+                        <p>Starting from ₹49,00,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                <div class="model-card" onclick="openModal('x5-modal')">
+                    <img src="image/ix xdrivw50.png" alt="THE NEW ALL-ELECTRIC BMW iX xDRIVE50">
+                    <div class="model-info">
+                        <h3>THE NEW ALL-ELECTRIC BMW iX xDRIVE50<br><h6>Full-Electric</h6></h3>
+                        <p>Starting from ₹1,39,50,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                <div class="model-card" onclick="openModal('series7-modal')">
+                    <img src="image/i4 eDrive35.png" alt="THE FIRST-EVER BMW i7 M70 xDRIVE">
+                    <div class="model-info">
+                        <h3>THE FIRST-EVER BMW i7 M70 xDRIVE<br><h6>Full-Electric</h6></h3>
+                        <p>Starting from ₹72,50,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                <div class="model-card" onclick="openModal('i8-modal')">
+                    <img src="image/i7 M70 xDrive.png" alt="THE FIRST-EVER BMW i7 M70 xDRIVE">
+                    <div class="model-info">
+                        <h3>THE FIRST-EVER BMW i7 M70 xDRIVE<br><h6>Full-Electric</h6></h3>
+                        <p>Starting from ₹ 2,50,00,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                <div class="model-card" onclick="openModal('m3-modal')">
+                    <img src="image/i5 M60.png" alt="New BMW THE FIRST-EVER BMW i5 M60 xDRIVE">
+                    <div class="model-info">
+                        <h3>New BMW THE FIRST-EVER BMW i5 M60 xDRIVE<br><h6>Full-Electric</h6></h3>
+                        <p>Starting From ₹ 1,19,50,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+                <br>
+                <div class="model-card" onclick="openModal('z4-modal')">
+                    <img src="image/X1 sDrive18i M Sport.png" alt="THE BMW X1">
+                    <div class="model-info">
+                        <h3>THE BMW X1<br><h6>Petrol•Diesel</h6></h3>
+                        <p>Starting from ₹ 50,80,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                 <div class="model-card" onclick="openModal('z4-modal')">
+                    <img src="image/X3 xDrive20 M Sport.png" alt="THE ALL-NEW X3">
+                    <div class="model-info">
+                        <h3>THE ALL-NEW X3<br><h6>Petrol•Diesel</h6></h3>
+                        <p>Starting from ₹ 75,80,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                 <div class="model-card" onclick="openModal('z4-modal')">
+                    <img src="image/X5 xDrive40i.png" alt="THE NEW BMW X5">
+                    <div class="model-info">
+                        <h3>THE NEW BMW X5<br><h6>Petrol•Diesel</h6></h3>
+                        <p>Starting from ₹ 97,80,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                 <div class="model-card" onclick="openModal('z4-modal')">
+                    <img src="image/x7-lci-offer.png" alt="THE BMW X7">
+                    <div class="model-info">
+                        <h3>THE BMW X7<br><h6>Petrol•Diesel</h6></h3>
+                        <p>Starting from ₹ 1,31,40,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+                <div class="model-card" onclick="openModal('z4-modal')">
+                    <img src="image/M2 Coupé.png" alt="THE NEW BMW M2">
+                    <div class="model-info">
+                        <h3>THE NEW BMW M2<br><h6>Petrol</h6></h3>
+                        <p>Starting from ₹ 1,03,00,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                <div class="model-card" onclick="openModal('z4-modal')">
+                    <img src="image/M340i xDrive.png" alt="THE BMW M340i">
+                    <div class="model-info">
+                        <h3>THE BMW M340i<br><h6>Petrol</h6></h3>
+                        <p>Starting from ₹ 75,90,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                <div class="model-card" onclick="openModal('z4-modal')">
+                    <img src="image/Z4 M40i.png" alt="THE BMW Z4">
+                    <div class="model-info">
+                        <h3>THE BMW Z4<br><h6>Petrol</h6></h3>
+                        <p>Starting from ₹ 92,90,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                <div class="model-card" onclick="openModal('z4-modal')">
+                    <img src="image/M8 Competition Coupe.png" alt="THE BMW M8 COMPETITION COUPE">
+                    <div class="model-info">
+                        <h3>THE BMW M8 COMPETITION COUPE<br><h6>Petrol</h6></h3>
+                        <p>Starting from ₹ 2,44,00,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                <div class="model-card" onclick="openModal('z4-modal')">
+                    <img src="image/i7 M70 xDrive.png" alt="THE FIRST-EVER BMW i7 M70 xDRIVE">
+                    <div class="model-info">
+                        <h3>THE FIRST-EVER BMW i7 M70 xDRIVE<br><h6>Full-Electric<h6></h3>
+                        <p>Starting from ₹ 92,90,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                <div class="model-card" onclick="openModal('z4-modal')">
+                    <img src="image/XM.webp" alt="THE BMW XM">
+                    <div class="model-info">
+                        <h3>THE BMW XM<br><h6>Plug-in Hybrid</h6></h3>
+                        <p>Starting from ₹ 2,60,00,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                <div class="model-card" onclick="openModal('z4-modal')">
+                    <img src="image/i5 M60.png" alt="New BMW THE FIRST-EVER BMW i5 M60 xDRIVE">
+                    <div class="model-info">
+                        <h3>THE FIRST-EVER BMW i5 M60 xDRIVE<br><h6>Full-Electric</h6></h3>
+                        <p>Starting from ₹ 1,19,50,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                <div class="model-card" onclick="openModal('z4-modal')">
+                    <img src="image/M4 Competition M xDrive.png" alt="THE NEW BMW M4 COMPETITION COUPE WITH M xDRIVE">
+                    <div class="model-info">
+                        <h3>THE NEW BMW M4 COMPETITION COUPE WITH M xDRIVE<br><h6>Petrol</h6></h3>
+                        <p>Starting from ₹ 1,56,00,000</p>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="x1-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('x1-modal')">&times;</span>
+            <h2>iX1 LWB</h2>
+            <div class="modal-gallery">
+                <img src="image/iX1 eDrive20L M Sport.png" alt="iX1 eDrive20L M Sport">
+            </div>
+            <div class="specs">
+                <h3>Engine / Technical data.</h3>
+                <ul>
+                    <li>Fuel type: Electric</li>
+                    <li>Transmission: Automatic</li>
+                    <li>System performance: 150 kW (204 PS)</li>
+                    <li>Acceleration (0-100 kmh): 8.6 sec</li>
+                    <li>CO2 Emission (combined): 0 g/km</li>
+                    <li>Battery size (gross/net): 66.5 kWh / 64.8 kWh</li>
+                    <li>Charging time (AC, 0-100% SOC): 6:45 h</li>
+                    <li>Max. charging performance AC: 11 kW</li>
+                    <li>Charging time (DC, 10-80% SOC): 0:32 h</li>
+                    <li>Max. charging performance DC: 130 kW</li>
+                </ul>
+            </div>
+            <button class="book-btn" onclick="window.location.href='booking.html'">Book Test Drive</button>
+        </div>
+    </div>
+
+    <div id="x5-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('x5-modal')">&times;</span>
+            <h2>iX xDrive50</h2>
+            <div class="modal-gallery">
+                <img src="image/ix xdrivw50.png" alt="BMW X5">
+            </div>
+            <div class="specs">
+                <h3>Engine / Technical data.</h3>
+                <ul>
+                    <li>System performance: 385 kW (523 PS)</li>
+                    <li>Battery size (gross/net): 111.5 kWh / 108.8 kWh</li>
+                    <li>Charging time (AC, 0-100% SOC): 11:00 h</li>
+                    <li>Top speed: 200 km/h</li>
+
+                </ul>
+            </div>
+            <button class="book-btn" onclick="window.location.href='booking.html'">Book Test Drive</button>
+        </div>
+    </div>
+
+    <div id="series7-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('series7-modal')">&times;</span>
+            <h2></h2>
+            <div class="modal-gallery">
+                <img src="image/i4 eDrive35.png" alt="">
+            </div>
+            <div class="specs">
+                <h3>Engine / Technical data.</h3>
+                <ul>
+                    <li>Transmission: Automatic</li>
+                    <li>System performance: 210 kW (286 PS)</li>
+                    <li>Drive Type: Rear wheel drive</li>
+                    <li>Acceleration (0-100 kmh): 6 sec</li>
+                </ul>
+            </div>
+            <button class="book-btn" onclick="window.location.href='booking.html'">Book Test Drive</button>
+        </div>
+    </div>
+
+    <div id="i8-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('i8-modal')">&times;</span>
+            <h2>BMW i8</h2>
+            <div class="modal-gallery">
+                <img src="image/i7 M70 xDrive.png" alt="BMW i8">
+            </div>
+            <div class="specs">
+                <h3>Engine / Technical data.</h3>
+                <ul>
+                    <li>Engine: Hybrid 1.5L + Electric</li>
+                    <li>Power: 369 hp</li>
+                    <li>0-60 mph: 4.2 seconds</li>
+                    <li>Fuel Economy: 76 MPGe</li>
+                </ul>
+            </div>
+            <button class="book-btn" onclick="window.location.href='booking.html'">Book Test Drive</button>
+        </div>
+    </div>
+
+    <div id="m3-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('m3-modal')">&times;</span>
+            <h2>BMW M3</h2>
+            <div class="modal-gallery">
+                <img src="image/i5 M60.png" alt="BMW M3">
+            </div>
+            <div class="specs">
+                <h3>Engine / Technical data.</h3>
+                <ul>
+                    <li>Engine: 3.0L Twin-Turbo</li>
+                    <li>Power: 473 hp</li>
+                    <li>0-60 mph: 4.1 seconds</li>
+                    <li>Fuel Economy: 16/23 mpg</li>
+                </ul>
+            </div>
+            <button class="book-btn" onclick="window.location.href='booking.html'">Book Test Drive</button>
+        </div>
+    </div>
+
+    <div id="m3-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('m3-modal')">&times;</span>
+            <h2>BMW M3</h2>
+            <div class="modal-gallery">
+                <img src="image/X1 sDrive18i M Sport.png" alt="BMW M3">
+            </div>
+            <div class="specs">
+                <h3>Engine / Technical data.</h3>
+                <ul>
+                    <li>Engine: 3.0L Twin-Turbo</li>
+                    <li>Power: 473 hp</li>
+                    <li>0-60 mph: 4.1 seconds</li>
+                    <li>Fuel Economy: 16/23 mpg</li>
+                </ul>
+            </div>
+            <button class="book-btn" onclick="window.location.href='booking.html'">Book Test Drive</button>
+        </div>
+    </div>
+
+    <div id="m3-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('m3-modal')">&times;</span>
+            <h2>BMW M3</h2>
+            <div class="modal-gallery">
+                <img src="image/X3 xDrive20 M Sport.png" alt="BMW M3">
+            </div>
+            <div class="specs">
+                <h3>Engine / Technical data.</h3>
+                <ul>
+                    <li>Engine: 3.0L Twin-Turbo</li>
+                    <li>Power: 473 hp</li>
+                    <li>0-60 mph: 4.1 seconds</li>
+                    <li>Fuel Economy: 16/23 mpg</li>
+                </ul>
+            </div>
+            <button class="book-btn" onclick="window.location.href='booking.html'">Book Test Drive</button>
+        </div>
+    </div>
+
+    <div id="m3-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('m3-modal')">&times;</span>
+            <h2>BMW M3</h2>
+            <div class="modal-gallery">
+                <img src="image/X5 xDrive40i.png" alt="BMW M3">
+            </div>
+            <div class="specs">
+                <h3>Engine / Technical data.</h3>
+                <ul>
+                    <li>Engine: 3.0L Twin-Turbo</li>
+                    <li>Power: 473 hp</li>
+                    <li>0-60 mph: 4.1 seconds</li>
+                    <li>Fuel Economy: 16/23 mpg</li>
+                </ul>
+            </div>
+            <button class="book-btn" onclick="window.location.href='booking.html'">Book Test Drive</button>
+        </div>
+    </div>
+
+    <div id="m3-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('m3-modal')">&times;</span>
+            <h2>BMW M3</h2>
+            <div class="modal-gallery">
+                <img src="image/x7-lci-offer.png" alt="BMW M3">
+            </div>
+            <div class="specs">
+                <h3>Engine / Technical data.</h3>
+                <ul>
+                    <li>Engine: 3.0L Twin-Turbo</li>
+                    <li>Power: 473 hp</li>
+                    <li>0-60 mph: 4.1 seconds</li>
+                    <li>Fuel Economy: 16/23 mpg</li>
+                </ul>
+            </div>
+            <button class="book-btn" onclick="window.location.href='booking.html'">Book Test Drive</button>
+        </div>
+    </div>
+
+    <div id="m3-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('m3-modal')">&times;</span>
+            <h2>BMW M3</h2>
+            <div class="modal-gallery">
+                <img src="image/i5 M60.png" alt="BMW M3">
+            </div>
+            <div class="specs">
+                <h3>Engine / Technical data.</h3>
+                <ul>
+                    <li>Engine: 3.0L Twin-Turbo</li>
+                    <li>Power: 473 hp</li>
+                    <li>0-60 mph: 4.1 seconds</li>
+                    <li>Fuel Economy: 16/23 mpg</li>
+                </ul>
+            </div>
+            <button class="book-btn" onclick="window.location.href='booking.html'">Book Test Drive</button>
+        </div>
+    </div>
+
+    <div id="m3-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('m3-modal')">&times;</span>
+            <h2>BMW M3</h2>
+            <div class="modal-gallery">
+                <img src="image/i5 M60.png" alt="BMW M3">
+            </div>
+            <div class="specs">
+                <h3>Engine / Technical data.</h3>
+                <ul>
+                    <li>Engine: 3.0L Twin-Turbo</li>
+                    <li>Power: 473 hp</li>
+                    <li>0-60 mph: 4.1 seconds</li>
+                    <li>Fuel Economy: 16/23 mpg</li>
+                </ul>
+            </div>
+            <button class="book-btn" onclick="window.location.href='booking.html'">Book Test Drive</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="image/logo.png" alt="BMW Logo" class="footer-logo">
+                    <p>The Ultimate Driving Machine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="models.html">Models</a></li>
+                        <li><a href="booking.html">Book Test Drive</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 BMW Boulevard, NY 10001</p>
+                    <p>📞 +1 (555) 123-BMW1</p>
+                    <p>✉️ info@bmwshowroom.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#">📘 Facebook</a>
+                        <a href="#">📷 Instagram</a>
+                        <a href="#">🐦 Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BMW Showroom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
